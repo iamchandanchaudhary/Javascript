@@ -1,0 +1,8 @@
+    console.log("Nested Loop :- \n");
+
+    for(let i = 1; i <= 3; i++) {
+        console.log("Outer Loop : ");
+        for(let j = 1; j <= 3; j++) {
+            console.log(j);
+        }
+    }
