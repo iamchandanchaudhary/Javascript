@@ -1,23 +1,18 @@
-    console.log(document);
-
-    console.dir(document);
-
-    console.dir(document.all);
-
-    console.dir(document.all[7]);
-    // console.log("Original Value :", document.all[7]);
-
-    console.dir(document.all[7].innerText);
-
-    // Manipulate the Heading
-    document.all[7].innerText = "Thala for a Reason";
-
-    console.log(document.all[7]);
-
     // Manipulate the 
     // Select Element By Class
     console.dir(document.getElementsByClassName("image-main"));
+    console.dir(document.getElementsByClassName("image-main")[0]);
 
-    let obj1 = document.getElementsByClassName("image-main");
+    let subImage = document.getElementsByClassName("image-main");
 
-    console.dir(obj1);
+    console.dir(subImage);
+
+    console.log("All Images :");
+    for(let i = 0; i < subImage.length; i++) {
+        subImage[i].src = "Ms Dhoni.jpg";
+        console.dir(subImage[i]);
+    }
+
+    // console.dir(subImage[0].src);
+    // subImage[0].src = "Ms Dhoni.jpg";
+    // console.log(`Image 1 address has been Changed`);

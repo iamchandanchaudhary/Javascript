@@ -1,4 +1,5 @@
 body {
+    font-family: 'Poppins';
     background-color: lightseagreen;
 }
 
@@ -27,7 +28,7 @@ h1 {
 }
 
 #line1 {
-    width: 350px;
+    width: 460px;
     text-align: center;
 
     color: darkblue;
@@ -41,16 +42,13 @@ h1 {
     margin: auto;
 }
 
-
 .pictures {
-    height: 400px;
+    height: 250px;
     width: 70%;
 
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-
-    /* background-color: antiquewhite; */
 }
 
 .image-main {
@@ -60,6 +58,21 @@ h1 {
     object-fit: cover;
     object-position: top;
 
-    border: 2px solid darkblue;
+    border: 2px solid darkslategray;
     box-shadow: 2px 2px 12px 1px black;
+}
+
+#pic-3 {
+    object-position: center;
+}
+
+.line3 {
+    width: 90%;
+    /* text-align: center; */
+
+    margin-left: 20px;
+}
+
+li {
+    margin-left: 20px;
 }
