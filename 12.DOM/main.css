@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins';
-    background-color: lightseagreen;
+    background-color: #c29f04;
 }
 
 h1 {
@@ -63,7 +63,12 @@ h1 {
 }
 
 #pic-3 {
-    object-position: center;
+    /* object-position: center; */
+}
+
+.line3 a {
+    color: black;
+    text-decoration: none;
 }
 
 .line3 {
