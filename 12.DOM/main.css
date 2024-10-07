@@ -81,3 +81,14 @@ h1 {
 li {
     margin-left: 20px;
 }
+
+/* Css For external Work */
+/* For JavaScript */
+.color {
+    color: darkred;
+    
+}
+
+.underline {
+    text-decoration: underline wavy black;
+}
