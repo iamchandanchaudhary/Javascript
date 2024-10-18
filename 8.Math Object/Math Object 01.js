@@ -11,7 +11,7 @@
     let absoluteValue2 = Math.abs(-12);
     let absoluteValue3 = Math.abs(-12.5);
 
-    console.log("Absolute Value :", absoluteValue1);
+    console.log("\nAbsolute Value :", absoluteValue1);
     console.log("Absolute Value :", absoluteValue2);
     console.log("Absolute Value :", absoluteValue3 , "\n");
 

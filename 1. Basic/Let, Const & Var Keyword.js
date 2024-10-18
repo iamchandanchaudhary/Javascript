@@ -2,7 +2,7 @@ console.log("Uses of Let, Const & Var Keywords :- \n");
 
 // Let Keyword //
 
-let a = 5;
+let a = 5; // can not able to re-define only you can change the value
 
 console.log("A : " + a);
 
@@ -43,6 +43,8 @@ console.log("Area : " + area);
 
 var number5 = 32;
 var number6 = 21;
+
+var number6 = 5; // Var can be re-define
 
 var sum5 = number5 + number6;
 
