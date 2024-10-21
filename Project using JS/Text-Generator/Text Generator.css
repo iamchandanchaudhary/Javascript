@@ -1,0 +1,81 @@
+body {
+    font-family: poppins;
+    background-color:lightsalmon;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+}
+
+#inp-para {
+    display: inline;
+    font-weight: bold;
+}
+
+#input-area {
+    width: 550px;
+    height: 22px;
+
+    /* margin-top: -15px; */
+}
+
+.main-box {
+    width: 50vw;
+    height: 70vh;
+
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: wheat;
+}
+
+.font-line {
+    margin-left: 10px;
+}
+
+#p1 {
+    font-family: arial;
+}
+
+#p2 {
+    font-family: poppins;
+}
+
+#p3 {
+    font-family: robota;
+}
+
+#p4 {
+    font-family: sans-serif;
+}
+
+#p5 {
+    font-family: teko;
+}
+
+#p6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#p7 {
+    font-family: impact;
+}
+
+#p8 {
+    font-family: orbitron black;
+}
+
+#p9 {
+    font-family: magneto;
+}
+
+#p10 {
+    font-family: Castellar;
+}
