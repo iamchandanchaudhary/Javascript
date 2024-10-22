@@ -1,0 +1,19 @@
+body {
+    /* color: white; */
+}
+
+.box {
+    height: 300px;
+    width: 500px;
+
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+ul {
+    background-color: darkcyan;
+}
+
+li {
+    background-color: antiquewhite;
+}

@@ -33,7 +33,7 @@
     line3end.append(" Hello, I'm new Value,");
     line3end.append(" Tell me Your Openion");
 
-    // Append in the same element --> at the end
+    // Append in the same element --> at the start
     let line2staxt = document.querySelector("#line2text");
 
     line2staxt.prepend("Hello, I'm new Value, ");
