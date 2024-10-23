@@ -1,0 +1,29 @@
+body {
+    font-family: poppins;
+    background-color:darkkhaki;
+}
+
+p {
+    font-weight: bold;
+}
+
+input {
+    height: 20px;
+    width: 200px;
+}
+
+#add-btn {
+    height: 25px;
+    width: 110px;
+}
+
+.task-list {
+    margin-left: 20px;
+}
+
+/* External for Js */
+.del-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
