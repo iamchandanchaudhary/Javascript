@@ -1,59 +1,80 @@
-let gameSeq = [];
-let userSeq = [];
+    let gameSeq = [];
+    let userSeq = [];
 
-let btns = ["box1", "box2", "box3", "box4"];
+    let btns = ["box1", "box2", "box3", "box4"];
 
-let level = 0;
-let started = false;
+    let level = 0;
+    let started = false;
 
-let body = document.querySelector("body");
-let statusline = document.querySelector("#status-line");
+    let body = document.querySelector("body");
+    let statusline = document.querySelector("#status-line");
 
-// Level 1 --> Start the game
-body.addEventListener("keypress", function() {
+    // Level 1 --> Start the game
+    body.addEventListener("keypress", function() {
 
-    if(started == false) {
-        started = true;
-        console.log("Game started");
-    } 
+        if(started == false) {
+            started = true;
+            console.log("Game started");
+        } 
 
-    levelUp();
-})
+        levelUp();
+    })
 
-// Level 2 --> Blink Random Box & Update Level
+    // Level 2 --> Blink Random Box & Update Level
 
-// Flash Box Bg
-function boxflash(btn) {
-    btn.classList.add("flash-box");
+    // Flash Box Bg when game flash
+    function boxflash(btn) {
+        btn.classList.add("flash-box");
 
-    setTimeout(
-        function() {
-            btn.classList.remove("flash-box");
-        }, 250);
-}
+        setTimeout(
+            function() {
+                btn.classList.remove("flash-box");
+            }, 250);
+    }
 
-function levelUp() {
-    level++;
-    statusline.innerText = `Level ${level}`;
+    // Flash Box when user press
+    function userflash(btn) {
+        btn.classList.add("userPress");
 
-    // Pick Random Box
-    let randomIdx = Math.floor(Math.random() * 4);
-    let randomColor = btns[randomIdx];
+        setTimeout(
+            function() {
+                btn.classList.remove("userPress");
+            }, 250);
+    }
 
-    let randomBox = document.querySelector(`.${randomColor}`);
+    function levelUp() {
+        level++;
+        statusline.innerText = `Level ${level}`;
 
-    console.log(randomColor);
+        // Pick Random Box
+        let randomIdx = Math.floor(Math.random() * 4);
+        let randomColor = btns[randomIdx];
 
-    boxflash(randomBox);
-}
+        let randomBox = document.querySelector(`.${randomColor}`);
 
-// Level 3
-function boxPresed() {
-    console.log("Box Pressed");
-}
+        // console.log(randomColor);
 
-let allBox = document.querySelectorAll(".box");
+        // Level 4 --> Store the sequence in Array
+        gameSeq.push(randomColor);
+        console.log(gameSeq);
 
-for(box of allBox) {
-    box.addEventListener("click", boxPresed);
-}
+        boxflash(randomBox);
+    }
+
+    // Level 3 --> Button Press Function
+    function boxPresed() {
+        // console.log(this);
+        let btn = this;
+        userflash(this);
+        console.log(btn);
+
+        userflash = btn.getAttribute("id");
+        userSeq.push(userflash);
+        console.log(userSeq);
+    }
+
+    let allBox = document.querySelectorAll(".box");
+
+    for(box of allBox) {
+        box.addEventListener("click", boxPresed);
+    }
