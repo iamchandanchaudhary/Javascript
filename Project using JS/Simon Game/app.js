@@ -43,6 +43,8 @@
     } 
 
     function levelUp() {
+        userSeq = [];
+
         level++;
         statusline.innerText = `Level ${level}`;
 
@@ -62,16 +64,28 @@
     }
 
     // level 4 --> Matching Sequence
-    function checkAns() {
+    function checkAns(idx) {
         console.log("Current Level : ", level);
 
-        let idx = level - 1;
+        // let idx = level - 1;
 
         if(userSeq[idx] === gameSeq[idx]) {
-            console.log("Same Sequence!");
+            // console.log("Same Sequence!");
+            // Level 4 (Advance) -->
+            if(userSeq.length == gameSeq.length) {
+                setTimeout(levelUp(), 1000);
+            }
         }
         else {
-            statusline.innerText = "Game Over! Press any key to Restart the Game."
+            statusline.innerHTML = `Game Over! Your score was <b>${level}</b> <br>Press any key to Restart the Game.`;
+
+            // Level 6 --> Display Score & Change Warning Bg
+            document.querySelector(".game-box").style.backgroundColor = "red";
+            setTimeout(function() {
+                document.querySelector(".game-box").style.backgroundColor = "white";
+            }, 350);
+
+            resetGame();
         }
     }
 
@@ -85,13 +99,21 @@
         // Level 4 --> Storing the sequence of clicked box in array
         userColor = btn.getAttribute("id");
         userSeq.push(userColor);
-        console.log(userSeq);
+        // console.log(userSeq);
 
-        checkAns();
+        checkAns(userSeq.length - 1);
     }
 
     let allBox = document.querySelectorAll(".box");
 
     for(box of allBox) {
         box.addEventListener("click", boxPresed);
+    }
+
+    // Level 5 --> Reset the game if Game Over
+    function resetGame() {
+        started = false;
+        gameSeq = [];
+        userSeq = [];
+        level = 0;
     }
