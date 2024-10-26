@@ -6,10 +6,11 @@
     btn.addEventListener("click", getRandomColor);
     btn.addEventListener("click", function () {
         // let boxP = document.querySelector(".color-name");
-        boxP.innerText = getRandomColor();
+        let randomColor = getRandomColor();
+        boxP.innerText = randomColor;
 
         // let boxBg = document.querySelector(".color-box");
-        boxBg.style.background = getRandomColor();
+        boxBg.style.background = randomColor;
     });
 
     // Generate color

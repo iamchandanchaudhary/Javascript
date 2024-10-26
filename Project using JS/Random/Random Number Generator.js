@@ -4,11 +4,13 @@
     let changeNum = document.querySelector(".number-random");
 
     randomBtn.addEventListener("click", function() {
-        changeNum.innerText = getRandomNumber();
+        let randomNum = getRandomNumber();
+        changeNum.innerText = randomNum;
+        // console.log(getRandomNumber());
 
-        // let 
+        // let  
 
-        if(getRandomNumber() % 2 == 0) {
+        if(randomNum % 2 == 0) {
             numberType.innerText = "Even Number";
         } else {
             numberType.innerText = "Odd Number";
