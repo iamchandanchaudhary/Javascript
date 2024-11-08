@@ -1,0 +1,5 @@
+Random APIs Endpoint:-
+
+1. https://catfact.ninja/fact
+2. https://www.boredapi.com/api/activity
+3. https://dog.ceo/api/breeds/image/random
