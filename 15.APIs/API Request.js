@@ -1,6 +1,6 @@
 let url = "https://catfact.ninja/fact";
 
-console.log(fetch(url)); // ==> Visibal in Network Tab
+// console.log(fetch(url)); // ==> Visibal in Network Tab
 
 /* Not Visible in Console Window */
 // fetch(url)
@@ -33,3 +33,5 @@ fetch(url)
 .catch( (err) => {
     console.log("Error -", err);
 })
+
+console.log("Chandan Chaudhary");
