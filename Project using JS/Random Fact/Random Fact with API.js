@@ -49,26 +49,31 @@ let ul = document.querySelector("ul");
 
 // }
 
-gBtn.addEventListener("click", () => {
-    // getFact();
+gBtn.addEventListener("click", async () => {
     
-    async function getFact() {
+    await getFact();
+})
+
+async function getFact() {
+    try {
         let result = await fetch(url);
         let data = await result.json();
-
+    
         // console.log(data);
         // console.log(data.fact);
-
+    
         let newli = document.createElement("li");
         // let data2 = getFact();
         newli.innerText = data.fact;
-
+    
         ul.appendChild(newli);
+
     }
-
-    getFact();
-})
-
+    catch(err) {
+        console.log("Error -", err);
+        console.log("Fact not Found");
+    }
+}
 // let data = getFact();
 // console.log(data);
 
