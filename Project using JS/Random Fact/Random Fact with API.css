@@ -1,0 +1,43 @@
+body {
+    font-family: roboto;
+    background-color: lightskyblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tag-line {
+    text-align: center;
+}
+
+.btns {
+    width: 30vw;
+    margin: auto;
+
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    width: 8vw;
+    height: 5vh;
+
+    font-weight: bold;
+    font-size: 0.9em;
+
+    border-radius: 5px;
+}
+
+.main-box {
+    width: 85vw;
+    margin: auto;
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
