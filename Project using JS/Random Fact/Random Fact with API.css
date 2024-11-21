@@ -15,7 +15,6 @@ h1 {
     width: 30vw;
     margin: auto;
 
-    /* border: 2px solid black; */
     display: flex;
     justify-content: space-evenly;
 }
