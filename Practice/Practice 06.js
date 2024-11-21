@@ -1,13 +1,17 @@
 let url = "https://catfact.ninja/fact";
 
 // try {
-//     async function getFact() {
-//         let data = await fetch.json(url);
+    async function getFact() {
+        let result = await fetch(url);
+        let data = await result.json();
         
-//         console.log(data);
-//     }
+        console.log(result);
+        console.log(data.fact);
+    }
 // } catch(err) {
 //     console.log("Error -", err);
 // }
 
-console.log(fetch(url));
+getFact();
+
+// console.log(fetch(url));
