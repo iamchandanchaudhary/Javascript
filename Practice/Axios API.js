@@ -6,7 +6,11 @@ async function getFact() {
 
         console.log(result);
         console.log(result.data);
-        console.log(result.data.fact);
+        console.log("Fact :", result.data.fact);
+
+        // Fact 2
+        let result2 = await axios.get(url);
+        console.log("Fact :", result2.data.fact);
 
     }
     catch(err) {
