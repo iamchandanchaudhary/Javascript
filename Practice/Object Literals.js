@@ -5,7 +5,6 @@
         name: "Chandan Chaudhary",
         age: 18,
         gender: "Male"
-        // name: "Rahul"
     }
 
     console.log("Student Info : ", students);
@@ -41,11 +40,6 @@
             rollno: 230014,
             course: "MCA"
         }
-
-        // Marks: {
-        //     maths: [92, 89, 78, 83, 80],
-        //     english: [88, 84, 56, 90, 91]
-        // }
     };
 
     console.log("Student Information :", studentsInfo);
@@ -63,7 +57,6 @@
         name: "Chandan Chaudhary",
         age: 18,
         gender: "Male"
-        // name: "Rahul"
     };
 
     // Adding, Replacing & Deleting Data from Object Literals
