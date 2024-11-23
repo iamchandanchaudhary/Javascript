@@ -16,10 +16,10 @@ saveToDB("Chandan Chaudhary")
 .then(() => {
     console.log("Data1 was Saved.");
 
-    return saveToDB("Parshuram");
+    return saveToDB("Aman Chaudhary");
 })
 .then(() => {
-    console.log("Data1 was Saved.");
+    console.log("Data2 was Saved.");
 })
 .catch(() => {
     console.log("Failed, Data was not Saved.");
