@@ -25,3 +25,11 @@ for(n of name) {
 let student = [["Chandan", "Sanju", "Raj"], ["Akash", "Chetan", "Mukesh"]];
 
 console.log(student);
+
+console.log("\nStudent List in Nested Loop:-");
+for(stu of student) {
+    for(s of stu) {
+        console.log(s);
+    }
+    console.log(" ");
+}
