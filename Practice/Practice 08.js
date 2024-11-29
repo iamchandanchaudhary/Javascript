@@ -14,3 +14,9 @@ for(arr of array) {
 }
 
 // on String
+let name = "Chandan Chaudhary";
+
+console.log(name);
+for(n of name) {
+    console.log(n);
+}
