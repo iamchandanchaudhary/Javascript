@@ -6,9 +6,11 @@ for(n of number) {
     console.log(n);
 }
 
-let arr = ["Chandan", "Bipin", "Kajal", "Suraj"];
+let array = ["Chandan", "Bipin", "Kajal", "Suraj"];
 
-console.log(arr);
-for(a of arr) {
-    console.log(a);
+console.log(array);
+for(arr of array) {
+    console.log(arr);
 }
+
+// on String
