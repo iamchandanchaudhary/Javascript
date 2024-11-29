@@ -20,3 +20,8 @@ console.log(name);
 for(n of name) {
     console.log(n);
 }
+
+// Nested For-of Loop
+let student = [["Chandan", "Sanju", "Raj"], ["Akash", "Chetan", "Mukesh"]];
+
+console.log(student);
