@@ -1,6 +1,6 @@
 let btn = document.querySelector("button");
 let taskInp = document.querySelector("input");
-let taskList = document.querySelector("ul");
+let taskList = document.querySelector("ol");
 
 btn.addEventListener("click", function() {
 

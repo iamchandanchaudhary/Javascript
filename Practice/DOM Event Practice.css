@@ -1,0 +1,18 @@
+body {
+    font-family: poppins;
+    background-color: darkkhaki;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-list {
+    width: 18vw;
+    margin: auto;
+}
+
+.inp-box {
+    width: 20vw;
+    margin: auto;
+}
