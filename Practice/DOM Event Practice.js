@@ -9,6 +9,6 @@ btn.addEventListener("click", function() {
 
     taskList.appendChild(newli);
     
-    // console.log(taskInp.value);
     taskInp.value = "";
+    // console.log(taskInp.value);
 })
