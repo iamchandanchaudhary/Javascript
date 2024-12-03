@@ -1,9 +1,9 @@
 setTimeout( () => {
-     console.log("Chandan");
+     console.log("Chandu");
     }, 2000);
 
     setTimeout( () => {
-        console.log("Chaudhary");
+        console.log("Bhaiii");
        }, 2000);
 
 console.log("Name :");

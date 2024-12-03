@@ -6,8 +6,8 @@ let student = {
     age: 18
 };
 
-console.log(student);
+console.log("Student info :", student);
 
 let jsonValue = JSON.stringify(student);
 
-console.log(jsonValue);
+console.log("Value in JSON :", jsonValue);

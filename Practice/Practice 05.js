@@ -16,7 +16,7 @@ saveToDB("Chandan Chaudhary")
 .then(() => {
     console.log("Data1 was Saved.");
 
-    return saveToDB("Aman Chaudhary");
+    return saveToDB("Suraj Chaudhary");
 })
 .then(() => {
     console.log("Data2 was Saved.");

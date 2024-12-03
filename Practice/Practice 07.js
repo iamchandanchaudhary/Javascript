@@ -6,7 +6,7 @@ let student = {
         marks: 98.7
     },
 
-    Aman: {
+    Vivek: {
         age: 21,
         marks: 91
     },
