@@ -8,14 +8,15 @@ let student = {
 
     Vivek: {
         age: 21,
-        marks: 91
+        marks: 89
     },
 
     Vishal: {
         age: 23,
-        marks: 78
+        marks: 87
     }
 }
 
 console.log(student);
 console.log("Chandan Details :", student.Chandan);
+console.log("Vishal Details :", student.Vishal);
