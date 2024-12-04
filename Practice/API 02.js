@@ -1,15 +1,30 @@
-let url = "https://catfact.ninja/fact";
+let url = "https://catfact.ninja/fact"; 
 
 async function getFact() {
     try {
         let result = await fetch(url);
-        let data = result.json();
+        let data = await result.json();
 
         console.log(data);
+        console.log(data.fact);
+
     } 
     catch(err) {
-
+        console.log("Error -", err);
     }
 }
 
 getFact();
+
+
+let student = {
+    name: "Chandan",
+    age: 18,
+    rollno: 230010
+}
+
+console.log(student);
+
+// JS to JSON
+let value = JSON.stringify(student);
+console.log(value);
