@@ -16,7 +16,7 @@ async function getFact() {
 
 getFact();
 
-
+// Next Concept
 let student = {
     name: "Chandan",
     age: 18,
