@@ -11,8 +11,6 @@ h1 {
     height: 30px;
     width: 120px;
 
-    /* display: block; */
-    /* margin: auto; */
     margin-bottom: 20px;
 }
 
@@ -42,4 +40,20 @@ h1 {
 
     margin: auto;
     background-color: white;
+}
+
+@media (max-width: 1200px) {
+    .color-box {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .color-box {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
 }
