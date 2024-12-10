@@ -17,7 +17,7 @@ p {
 }
 
 #input-area {
-    width: 550px;
+    width: 50vw;
     height: 22px;
 
     /* margin-top: -15px; */
@@ -34,6 +34,30 @@ p {
     border-radius: 10px;
 
     background-color: wheat;
+}
+
+@media (max-width: 950px) {
+    .main-box {
+        width: 75vw;
+        height: 90vh;
+    }
+
+    #input-area {
+        width: 75vw;
+        height: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-box {
+        width: 65vw;
+        height: 120vh;
+    }
+
+    #input-area {
+        width: 50vw;
+        height: 22px;
+    }
 }
 
 .font-line {
