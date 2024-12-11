@@ -12,20 +12,31 @@ h1 {
 }
 
 .btns {
-    width: 30vw;
+    width: 200px;
     margin: auto;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    /* background-color: yellow; */
 }
 
 .btn {
-    width: 8vw;
-    height: 5vh;
+    width: 100px;
+    height: 35px;
 
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 14px;
     border-radius: 5px;
+
+    margin-right: 10px;
+}
+
+@media (max-width: 950px) {
+    .btn {
+        font-size: 12px;
+        /* height: 5.5vh; */
+    }
 }
 
 .main-box {
@@ -37,4 +48,24 @@ h1 {
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    #tag-line {
+        width: 60vw;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    .main-box {
+        width: 75vw;
+    }
 }
