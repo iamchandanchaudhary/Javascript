@@ -17,8 +17,6 @@ h1 {
 
     display: flex;
     justify-content: space-between;
-
-    /* background-color: yellow; */
 }
 
 .btn {
@@ -35,7 +33,6 @@ h1 {
 @media (max-width: 950px) {
     .btn {
         font-size: 12px;
-        /* height: 5.5vh; */
     }
 }
 
