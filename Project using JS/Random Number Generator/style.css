@@ -30,7 +30,6 @@ button {
     justify-content: center;
 
     margin-top: 10px;
-    /* background-color: antiquewhite; */
 }
 
 .number-btn {
@@ -43,8 +42,6 @@ button {
     text-align: center;
 
     margin-top: 50px;
-
-    /* background-color: antiquewhite; */
 }
 
 .number-box p {
