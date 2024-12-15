@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
 .visible {
   visibility: visible;
 }
@@ -564,6 +572,10 @@ video {
 
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .-right-7 {
@@ -588,6 +600,10 @@ video {
 
 .top-11 {
   top: 2.75rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
