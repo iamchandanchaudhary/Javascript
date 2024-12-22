@@ -2336,6 +2336,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#ffffc7\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 199 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#1e3749\] {
+  --tw-text-opacity: 1;
+  color: rgb(30 55 73 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
