@@ -2276,6 +2276,10 @@ video {
   background-origin: content-box;
 }
 
+.fill-transparent {
+  fill: transparent;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -3063,6 +3067,11 @@ video {
   top: 100px;
 }
 
+.after\:-bottom-3::after {
+  content: var(--tw-content);
+  bottom: -0.75rem;
+}
+
 .after\:h-3::after {
   content: var(--tw-content);
   height: 0.75rem;
@@ -3078,6 +3087,11 @@ video {
   height: 20px;
 }
 
+.after\:h-2::after {
+  content: var(--tw-content);
+  height: 0.5rem;
+}
+
 .after\:w-3::after {
   content: var(--tw-content);
   width: 0.75rem;
@@ -3091,6 +3105,11 @@ video {
 .after\:w-\[2px\]::after {
   content: var(--tw-content);
   width: 2px;
+}
+
+.after\:w-2::after {
+  content: var(--tw-content);
+  width: 0.5rem;
 }
 
 .after\:-translate-x-1\/2::after {
@@ -3224,6 +3243,18 @@ video {
 
 .group:hover .group-hover\:top-12 {
   top: 3rem;
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
+}
+
+.group:hover .group-hover\:duration-200 {
+  transition-duration: 200ms;
+}
+
+.group:hover .group-hover\:ease-jump {
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 @media (min-width: 640px) {
