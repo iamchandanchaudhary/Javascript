@@ -3210,6 +3210,10 @@ video {
   text-align: center;
 }
 
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
 .group:hover .group-hover\:-right-9 {
   right: -2.25rem;
 }
@@ -3422,11 +3426,6 @@ video {
   .dark\:bg-gray-700 {
     --tw-bg-opacity: 1;
     background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
-  }
-
-  .dark\:bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
   }
 
   .dark\:text-gray-400 {
