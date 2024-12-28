@@ -1,4 +1,4 @@
-let btn = document.querySelector(".btn");
+let btn = document.querySelector(".about-btn");
 let container = document.querySelector(".container");
 let closeBtn = document.querySelector(".close-btn");
 
