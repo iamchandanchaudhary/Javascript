@@ -624,6 +624,10 @@ video {
   top: 0.5rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1064,4 +1068,10 @@ video {
 
 .group:hover .group-hover\:flex {
   display: flex;
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }
