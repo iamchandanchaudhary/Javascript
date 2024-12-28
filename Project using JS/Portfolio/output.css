@@ -875,6 +875,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1640,6 +1644,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2526,6 +2534,11 @@ video {
   line-height: 1rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2677,6 +2690,25 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#47A248\] {
+  --tw-text-opacity: 1;
+  color: rgb(71 162 72 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#61dafb\] {
+  --tw-text-opacity: 1;
+  color: rgb(97 218 251 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#8CC84B\] {
+  --tw-text-opacity: 1;
+  color: rgb(140 200 75 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#ffff\] {
+  color: #ffff;
 }
 
 .underline {
