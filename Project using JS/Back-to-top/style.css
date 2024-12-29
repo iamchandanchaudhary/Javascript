@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: poppins;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 52px;
+}
+
+.box1 {
+    color: #fff;
+    background-color: #111;
+}
+
+.box2 {
+
+}
+
+.box3 {
+    color: #fff;
+    background-color: #111;
+}
+
+.box4 {
+
+}
+
+.box5 {
+    color: #fff;
+    background-color: #111;
+}
+
+.backtop {
+    position: fixed;
+    padding: 5px;
+
+    background-color: purple;
+    
+}
