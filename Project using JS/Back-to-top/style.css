@@ -45,15 +45,32 @@ body {
 
 .backtop {
     position: fixed;
-    padding: 4px 12px;
+    padding: 5px 15px;
     right: 10px;
     bottom: 10px;
+    /* left: 95%;
+    top: 90%; */
 
     background-color: purple;
     color: #fff;
+    box-shadow: none;
+    border: none;
 }
 
 .backtop:hover {
     background-color: #fff;
     color: purple;
+}
+
+.move {
+    position: absolute;
+    padding: 5px 15px;
+    right: 50%;
+    transform: translate(50%);
+    bottom: 10px;
+
+    background-color: purple;
+    color: #fff;
+    box-shadow: none;
+    border: none;
 }
