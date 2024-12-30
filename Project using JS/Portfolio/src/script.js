@@ -36,6 +36,8 @@ lightBtn.addEventListener("click", () => {
     darkBtn.classList.remove("hidden");
     lightBtn.classList.add("hidden");
 
+    body.classList.add("light");
+
     // body.style.background = "#fff";
 })
 
@@ -44,5 +46,5 @@ darkBtn.addEventListener("click", () => {
     lightBtn.classList.remove("hidden");
     darkBtn.classList.add("hidden");
 
-    // body.style.background = "#111";
+    body.classList.remove("light");
 })
