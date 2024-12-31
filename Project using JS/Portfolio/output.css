@@ -3595,6 +3595,10 @@ video {
     margin-left: 3rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
