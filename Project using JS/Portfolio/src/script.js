@@ -48,3 +48,49 @@ darkBtn.addEventListener("click", () => {
 
     body.classList.remove("light");
 })
+
+
+// Auto Typing
+const autoType = document.querySelector(".auto-type");
+
+let typeList = ["Student", "Developer", "Boy", "18 Year Old"];
+
+// let word = "Developer";
+
+let listIndex = 0;
+let charIndex = 0;
+let skipUpdate = 0;
+let reverseText = false;
+
+let intervalId = setInterval(() => {
+
+    if(skipUpdate) {
+        skipUpdate--;
+        return;
+    }
+
+    if(!reverseText) {
+        skipUpdate = 1;
+        autoType.innerText = autoType.innerText +  typeList[listIndex][charIndex];
+        charIndex++;
+    } else {
+        autoType.innerText = autoType.innerText.slice(0, autoType.innerText.length - 1);
+        charIndex--;
+    }
+
+    if(charIndex === typeList[listIndex].length) {
+        skipUpdate = 5;
+        reverseText = true;
+    }
+
+    if(autoType.innerText.length === 0 && reverseText) {
+        reverseText = false;
+        // charIndex = 0;
+
+        listIndex++;
+    }
+
+    if(listIndex === typeList.length) {
+        listIndex = 0;
+    }
+}, 200)
