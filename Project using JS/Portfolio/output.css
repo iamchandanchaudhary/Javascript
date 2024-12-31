@@ -3191,6 +3191,11 @@ video {
   position: absolute;
 }
 
+.after\:relative::after {
+  content: var(--tw-content);
+  position: relative;
+}
+
 .after\:-bottom-1::after {
   content: var(--tw-content);
   bottom: -0.25rem;
@@ -3211,14 +3216,14 @@ video {
   top: 100px;
 }
 
-.after\:ml-3::after {
+.after\:ml-2::after {
   content: var(--tw-content);
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
 }
 
-.after\:inline-flex::after {
+.after\:inline-block::after {
   content: var(--tw-content);
-  display: inline-flex;
+  display: inline-block;
 }
 
 .after\:h-2::after {
@@ -3278,16 +3283,16 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.after\:bg-\[\#1595b6\]::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 149 182 / var(--tw-bg-opacity, 1));
+}
+
 .after\:bg-\[\#444\]::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(68 68 68 / var(--tw-bg-opacity, 1));
-}
-
-.after\:bg-\[\#fff\]::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .after\:bg-inherit::after {
