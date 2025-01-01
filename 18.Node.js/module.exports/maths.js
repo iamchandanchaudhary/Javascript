@@ -9,4 +9,13 @@ function multiply(a, b) {
     return a * b;
 }
 
-module.exports = 124;
+// module.exports = g;
+
+let obj = {
+    sum: sum,
+    multiply: multiply,
+    PI: PI,
+    g: g
+}
+
+module.exports = obj;
