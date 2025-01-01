@@ -18,4 +18,13 @@ let obj = {
     g: g
 }
 
-module.exports = obj;
+// ==> Different ways of implementing 'exports'
+// module.exports.g = 9.8;
+// exports.PI = 9.8;
+
+// module.exports = {
+//     sum: sum,
+//     multiply: multiply,
+//     PI: PI,
+//     g: g
+// }
