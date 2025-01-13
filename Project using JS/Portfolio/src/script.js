@@ -36,7 +36,7 @@ lightBtn.addEventListener("click", () => {
     darkBtn.classList.remove("hidden");
     lightBtn.classList.add("hidden");
 
-    body.classList.add("dark");
+    html.classList.add("dark");
 })
 
 darkBtn.addEventListener("click", () => {
@@ -44,7 +44,7 @@ darkBtn.addEventListener("click", () => {
     lightBtn.classList.remove("hidden");
     darkBtn.classList.add("hidden");
 
-    body.classList.remove("dark");
+    html.classList.remove("dark");
 })
 
 
