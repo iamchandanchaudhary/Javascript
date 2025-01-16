@@ -3313,11 +3313,6 @@ video {
   bottom: -0.25rem;
 }
 
-.after\:-bottom-2::after {
-  content: var(--tw-content);
-  bottom: -0.5rem;
-}
-
 .after\:left-1\/2::after {
   content: var(--tw-content);
   left: 50%;
@@ -3326,11 +3321,6 @@ video {
 .after\:top-\[100px\]::after {
   content: var(--tw-content);
   top: 100px;
-}
-
-.after\:-bottom-3::after {
-  content: var(--tw-content);
-  bottom: -0.75rem;
 }
 
 .after\:ml-\[4px\]::after {
@@ -3353,11 +3343,6 @@ video {
   height: 0.75rem;
 }
 
-.after\:h-4::after {
-  content: var(--tw-content);
-  height: 1rem;
-}
-
 .after\:h-\[20px\]::after {
   content: var(--tw-content);
   height: 20px;
@@ -3371,11 +3356,6 @@ video {
 .after\:w-3::after {
   content: var(--tw-content);
   width: 0.75rem;
-}
-
-.after\:w-4::after {
-  content: var(--tw-content);
-  width: 1rem;
 }
 
 .after\:w-\[2px\]::after {
@@ -3572,8 +3552,16 @@ video {
   right: -2.25rem;
 }
 
+.group:hover .group-hover\:-top-10 {
+  top: -2.5rem;
+}
+
 .group:hover .group-hover\:-top-14 {
   top: -3.5rem;
+}
+
+.group:hover .group-hover\:-top-8 {
+  top: -2rem;
 }
 
 .group:hover .group-hover\:-top-9 {
@@ -3582,26 +3570,6 @@ video {
 
 .group:hover .group-hover\:top-12 {
   top: 3rem;
-}
-
-.group:hover .group-hover\:-top-12 {
-  top: -3rem;
-}
-
-.group:hover .group-hover\:-top-8 {
-  top: -2rem;
-}
-
-.group:hover .group-hover\:-top-6 {
-  top: -1.5rem;
-}
-
-.group:hover .group-hover\:-top-7 {
-  top: -1.75rem;
-}
-
-.group:hover .group-hover\:-top-10 {
-  top: -2.5rem;
 }
 
 .group:hover .group-hover\:flex {
@@ -4005,16 +3973,6 @@ video {
     text-decoration-line: underline;
   }
 
-  .sm\:after\:-bottom-3::after {
-    content: var(--tw-content);
-    bottom: -0.75rem;
-  }
-
-  .sm\:after\:-bottom-4::after {
-    content: var(--tw-content);
-    bottom: -1rem;
-  }
-
   .sm\:after\:-bottom-2::after {
     content: var(--tw-content);
     bottom: -0.5rem;
@@ -4025,14 +3983,14 @@ video {
     margin-left: 0.5rem;
   }
 
-  .sm\:after\:h-5::after {
-    content: var(--tw-content);
-    height: 1.25rem;
-  }
-
   .sm\:after\:h-4::after {
     content: var(--tw-content);
     height: 1rem;
+  }
+
+  .sm\:after\:h-5::after {
+    content: var(--tw-content);
+    height: 1.25rem;
   }
 
   .sm\:after\:w-4::after {
@@ -4040,12 +3998,12 @@ video {
     width: 1rem;
   }
 
-  .group:hover .sm\:group-hover\:-top-9 {
-    top: -2.25rem;
-  }
-
   .group:hover .sm\:group-hover\:-top-12 {
     top: -3rem;
+  }
+
+  .group:hover .sm\:group-hover\:-top-9 {
+    top: -2.25rem;
   }
 }
 
