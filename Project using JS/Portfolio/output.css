@@ -3883,6 +3883,11 @@ video {
   background-color: inherit;
 }
 
+.dark\:bg-\[\#0a0d14\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 13 20 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:bg-gradient-to-l:is(.dark *) {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
