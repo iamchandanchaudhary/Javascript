@@ -3879,8 +3879,16 @@ video {
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 
+.dark\:bg-inherit:is(.dark *) {
+  background-color: inherit;
+}
+
 .dark\:bg-gradient-to-l:is(.dark *) {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.dark\:bg-none:is(.dark *) {
+  background-image: none;
 }
 
 .dark\:from-\[\#040917\]:is(.dark *) {
@@ -4160,11 +4168,6 @@ video {
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .sm\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 
   .sm\:py-4 {
