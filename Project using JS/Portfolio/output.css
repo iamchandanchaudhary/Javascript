@@ -2651,6 +2651,16 @@ video {
   padding-bottom: 6px;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4118,6 +4128,11 @@ video {
     padding-bottom: 1rem;
   }
 
+  .sm\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -4240,6 +4255,11 @@ video {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .md\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .md\:text-4xl {
