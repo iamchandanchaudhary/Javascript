@@ -3849,6 +3849,11 @@ video {
   background-color: rgb(255 255 199 / var(--tw-bg-opacity, 1));
 }
 
+.dark\:bg-gray-800:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:bg-gradient-to-l:is(.dark *) {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
@@ -3963,6 +3968,11 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
+.dark\:hover\:bg-\[\#f5f5f5\]:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:hover\:text-\[\#fff\]:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -3976,6 +3986,11 @@ video {
 .dark\:focus\:border-\[\#1788ae\]:focus:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(23 136 174 / var(--tw-border-opacity, 1));
+}
+
+.group:hover .dark\:group-hover\:text-\[\#111\]:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(17 17 17 / var(--tw-text-opacity, 1));
 }
 
 .peer:focus ~ .dark\:peer-focus\:text-\[\#1788ae\]:is(.dark *) {
