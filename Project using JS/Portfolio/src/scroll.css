@@ -1,5 +1,17 @@
 /* Scroll Animation */
 
+@media (min-width: 600px) {
+    .not-show-pop {
+        opacity: 0;
+        transition: all 0.5s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+        
+        transform: scale(0.4);
+        /* background-color: red; */
+    }
+}
+
 .not-show-odd {
     opacity: 0;
     transition: all 1.5s;
@@ -15,12 +27,12 @@
 }
 
 .not-show-pop {
-    opacity: 0;
+    /* opacity: 0;
     transition: all 0.5s;
     filter: blur(5px);
     transform: translateX(-50%);
     
-    transform: scale(0.4);
+    transform: scale(0.4); */
 }
 
 .not-show-pop-slow {
