@@ -108,34 +108,34 @@
 }
 
 .not-show-pop {
-    /* opacity: 0;
+    opacity: 0;
     transition: all 0.5s;
     filter: blur(5px);
     transform: translateX(-50%);
     
-    transform: scale(0.4); */
+    transform: scale(0.4);
 }
 
 .not-show-pop-slow {
-    /* opacity: 0;
+    opacity: 0;
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(-50%);
     
-    transform: scale(0.4); */
+    transform: scale(0.4);
 }
 
 .not-show-top {
-    /* opacity: 0;
+    opacity: 0;
     transition: all 1.5s;
     filter: blur(5px);
-    transform: translateY(-200%); */
+    transform: translateY(-200%);
 }
 
 .not-show-bottom {
-    /* opacity: 0;
+    opacity: 0;
     transition: all 1s;
-    filter: blur(5px); */
+    filter: blur(5px);
     transform: translateY(200%);
 }
 
@@ -144,6 +144,13 @@
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(-30%); */
+
+        opacity: 0;
+        transition: all 0.5s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+        
+        transform: scale(0.4);
 }
 
 .not-show-right {
@@ -151,6 +158,13 @@
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(30%); */
+
+        opacity: 0;
+        transition: all 0.5s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+        
+        transform: scale(0.4);
 }
 
 .not-show-left-special {
@@ -158,6 +172,13 @@
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(-15%); */
+
+        opacity: 0;
+        transition: all 0.5s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+        
+        transform: scale(0.4);
 }
 
 .not-show-right-special {
@@ -165,6 +186,13 @@
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(15%); */
+
+        opacity: 0;
+        transition: all 0.5s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+        
+        transform: scale(0.4);
 }
 
 .not-show-left-high {
@@ -172,6 +200,13 @@
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(-50%); */
+
+        opacity: 0;
+        transition: all 0.5s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+        
+        transform: scale(0.4);
 }
 
 .not-show-right-high {
@@ -179,6 +214,13 @@
     transition: all 1.5s;
     filter: blur(5px);
     transform: translateX(50%); */
+
+        opacity: 0;
+        transition: all 0.5s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+        
+        transform: scale(0.4);
 }
 
 .show {
