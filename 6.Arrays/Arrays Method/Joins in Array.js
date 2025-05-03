@@ -7,3 +7,6 @@
     console.log("Numbers :", numbers.join(" & "));
 
     console.log("Numbers :", numbers.join(" or "));
+
+    console.log("Numbers :", numbers.join(", "));
+    
