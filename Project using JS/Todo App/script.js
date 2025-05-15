@@ -3,7 +3,6 @@ let taskInp = document.querySelector("input");
 let taskList = document.querySelector("ul");
 
 btn.addEventListener("click", function() {
-
     // Adding Task
     let newli = document.createElement("li");
     newli.innerText = taskInp.value;
