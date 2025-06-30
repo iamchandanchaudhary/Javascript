@@ -1,4 +1,4 @@
-// ==> var datatype
+// ==> var datatype (Avoid using this)
     var x = 10;
     console.log(x); // 10
 

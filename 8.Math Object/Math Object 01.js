@@ -10,10 +10,12 @@
     let absoluteValue1 = Math.abs(12);
     let absoluteValue2 = Math.abs(-12);
     let absoluteValue3 = Math.abs(-12.5);
+    let absoluteValue4 = Math.abs(-12.3);
 
     console.log("\nAbsolute Value :", absoluteValue1);
     console.log("Absolute Value :", absoluteValue2);
-    console.log("Absolute Value :", absoluteValue3 , "\n");
+    console.log("Absolute Value :", absoluteValue3);
+    console.log("Absolute Value :", absoluteValue4, "\n");
 
     // Power Method
     let power = Math.pow(5, 2);
@@ -47,3 +49,16 @@
     console.log("2nd Ceil Value :", ceilNum2);
     console.log("3rd Ceil Value :", ceilNum3);
     console.log("4th Ceil Value :", ceilNum4);
+
+    // Round --> Round of the Nearest Integer value
+    let roundNum1 = Math.round(5);
+    let roundNum2 = Math.round(5.2);
+    let roundNum3 = Math.round(5.9999);
+    let roundNum4 = Math.round(-5.6);
+    let roundNum5 = Math.round(5.6);
+
+    console.log("\n1st Round Value :", roundNum1);
+    console.log("2nd Round Value :", roundNum2);
+    console.log("3rd Round Value :", roundNum3);
+    console.log("4th Round Value :", roundNum4);
+    console.log("5th Round Value :", roundNum5);
