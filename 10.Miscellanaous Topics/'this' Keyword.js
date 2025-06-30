@@ -1,3 +1,4 @@
+    // In JavaScript, the this keyword refers to an object.
     console.log("'this' Keyword in JS :- \n");
 
     const student = {
@@ -11,6 +12,7 @@
 
         getAvg() {
             console.log(this);
+            // let avg = (student.maths + student.english + student.physics + student.chemistry + student.biology) / 5;
             let avg = (this.maths + this.english + this.physics + this.chemistry + this.biology) / 5;
             console.log("Average Marks :", avg);
         }
