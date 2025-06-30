@@ -10,6 +10,7 @@
         rollno: 230010   
     };
 
+    // => Without Destructuring
     // let name = student.name;
     // let age = student.age;
 
