@@ -20,10 +20,10 @@
     console.log("Name :", name);
     console.log("Age :", age);
 
-    let { semester: sem} = student;
+    let { semester: sem} = student; // assign with new name
     console.log("Semester :", sem);
 
-    let {city = "Basti"} = student;
+    let {city = "Basti"} = student; // Creating new key
     console.log("City :", city);
 
     console.log("Main Object :", student);
