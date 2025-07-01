@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Chandan Chaudhary",
+        "age": 18,
+        "city": "Basti",
+        "rollno": 230010
+    },
+
+    {
+        "name": "Vinay Verma",
+        "age": 26,
+        "city": "Gorakhpur",
+        "rollno": 230015
+    },
+
+    {
+        "name": "Abhishekh Singh",
+        "age": 21,
+        "city": "Lucknow",
+        "rollno": 230012
+    }
+]
