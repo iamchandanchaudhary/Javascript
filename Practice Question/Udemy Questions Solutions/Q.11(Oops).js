@@ -1,6 +1,8 @@
-// Task 1: Encapsulation Using Getters and Setters
 class BankAccount {
   constructor(initialBalance = 0) {
+    if (initialBalance < 0) {
+      throw new Error("Initial balance cannot be negative");
+    }
     this._balance = initialBalance;
   }
 
@@ -9,51 +11,54 @@ class BankAccount {
     return this._balance;
   }
 
-  // Setter for balance (ensures non-negative balance)
+  // Setter for balance (ensures no negative values)
   set balance(amount) {
     if (amount < 0) {
-      console.log("Balance cannot be negative!");
-    } else {
-      this._balance = amount;
+      throw new Error("Balance cannot be negative");
     }
+    this._balance = amount;
   }
 
+  // Method to deposit money
   deposit(amount) {
-    if (amount > 0) {
-      this._balance += amount;
-      console.log(`Deposited: ${amount}, New Balance: ${this._balance}`);
-    } else {
-      console.log("Deposit amount must be positive!");
+    if (amount <= 0) {
+      throw new Error("Deposit amount must be positive");
     }
+    this._balance += amount;
   }
 
+  // Method to withdraw money
   withdraw(amount) {
-    if (amount > 0 && this._balance >= amount) {
-      this._balance -= amount;
-      console.log(`Withdrew: ${amount}, New Balance: ${this._balance}`);
-    } else {
-      console.log("Insufficient balance or invalid amount!");
+    if (amount <= 0) {
+      throw new Error("Withdrawal amount must be positive");
     }
+    if (this._balance - amount < 0) {
+      throw new Error("Insufficient funds");
+    }
+    this._balance -= amount;
   }
 }
 
-// ---------------- Demo Task 1 ----------------
-const myAccount = new BankAccount(100);
-console.log(myAccount.balance);   // 100
-myAccount.deposit(50);            // Deposited: 50, New Balance: 150
-myAccount.withdraw(30);           // Withdrew: 30, New Balance: 120
-myAccount.balance = -500;         // Balance cannot be negative!
-console.log(myAccount.balance);   // 120
+// Example usage:
+const account = new BankAccount(100);
+account.deposit(50);     // Works fine
+account.withdraw(30);    // Works fine
+// account.withdraw(200);   // ❌ Throws "Insufficient funds"
+// account.balance = -500;  // ❌ Throws "Balance cannot be negative"
 
 
 
-// Task 2: Polymorphism with Method Overriding
+
+
+
+// Base class
 class Shape {
   area() {
-    return 0;
+    return 0; // default
   }
 }
 
+// Circle subclass
 class Circle extends Shape {
   constructor(radius) {
     super();
@@ -65,6 +70,7 @@ class Circle extends Shape {
   }
 }
 
+// Rectangle subclass
 class Rectangle extends Shape {
   constructor(width, height) {
     super();
@@ -77,9 +83,13 @@ class Rectangle extends Shape {
   }
 }
 
-// ---------------- Demo Task 2 ----------------
-const circle = new Circle(5);
-console.log("Circle Area:", circle.area()); // 78.5398...
+// Usage
+const shapes = [
+  new Shape(),
+  new Circle(5),
+  new Rectangle(4, 6)
+];
 
-const rectangle = new Rectangle(4, 6);
-console.log("Rectangle Area:", rectangle.area()); // 24
+shapes.forEach(shape => {
+  console.log(`Area: ${shape.area()}`);
+});
