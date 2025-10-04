@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+    background-color: #091921;
+    color: #fff;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    padding: 10px 0px;
+    background-color: #091921;
+}
+
+p {
+    height: 30px;
+    margin: 10px 0px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-box {
+    height: 450px;
+    width: 500px;
+
+    margin: auto;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: #d93868; */
+}
+
+.box {
+    width: 170px;
+    height: 170px;
+
+    border: 5px solid #fff;
+    border-radius: 25px;
+}
+
+.box1 {
+    background-color: #d93868;
+}
+
+.box2 {
+    background-color:#64ccf5;
+}
+
+.box3 {
+    background-color: #4e0b9c;
+}
+
+.box4 {
+    background-color: #ffe342;
+}
+
+.start-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 24px;
+    margin: auto;
+    margin-top: 20px;
+
+    color: #fff;
+    background-color: #091921;
+    border: 2px solid #fff;
+    border-radius: 8px;
+
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+.start-btn:hover {
+    color: #091921;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+/* External Style for Javascript */
+.flash-box {
+    background-color: white;
+}
+
+.userPress {
+    background-color:chartreuse;
+}
+
+@media (max-width: 650px) {
+    .game-box {
+        height: 300px;
+        width: 350px;
+    }
+
+    .box {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 380px) {
+    .game-box {
+        height: 250px;
+        width: 270px;
+    }
+
+    .box {
+        width: 95px;
+        height: 95px;
+        border-radius: 20px;
+    }
+
+    .start-btn {
+        font-size: 14px;
+        padding: 4px 16px;
+        border-radius: 4px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 12px;
+        height: 30px;
+    }
+}
+
+/* Animation */
+.content {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: #ffffff;
+    font-family: poppins;
+    text-decoration: uppercase;
+    text-align: center;
+    font-size: 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+
+    max-height: 90vh;
+}
+
+.round {
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    animation: animate 4s linear infinite;
+}
+
+.round:nth-child(1) {
+    left: 5%;
+    animation-delay: 0.5s;
+    background: red;
+}
+
+.round:nth-child(2) {
+    left: 65%;
+    animation-delay: 1s;
+    background: green;
+}
+
+.round:nth-child(3) {
+    left: 90%;
+    animation-delay: 1.5s;
+    background: purple;
+}
+
+.round:nth-child(4) {
+    left: 18%;
+    animation-delay: 2s;
+    background: skyblue;
+}
+
+.round:nth-child(5) {
+    left: 93%;
+    animation-delay: 2.5s;
+    background: white;
+}
+
+.round:nth-child(6) {
+    left: 52%;
+    animation-delay: 3s;
+    background: deepskyblue;
+}
+
+.round:nth-child(7) {
+    left: 65%;
+    animation-delay: 3.5s;
+    background: mediumaquamarine;
+}
+
+.round:nth-child(8) {
+    left: 35%;
+    animation-delay: 4s;
+    background: yellow;
+}
+
+.round:nth-child(9) {
+    left: 85%;
+    animation-delay: 4.5s;
+    background: darkgoldenrod;
+}
+
+.round:nth-child(10) {
+    left: 45%;
+    animation-delay: 5s;
+    background: fuchsia;
+}
+
+.round:nth-child(11) {
+    left: 36%;
+    animation-delay: 5.5s;
+    background: aqua;
+}
+
+.round:nth-child(12) {
+    left: 72%;
+    animation-delay: 6s;
+    background: chartreuse;
+}
+
+.round:nth-child(13) {
+    left: 14%;
+    animation-delay: 6.5s;
+    background: mediumorchid;
+}
+
+.round:nth-child(14) {
+    left: 70%;
+    animation-delay: 7s;
+    background: mediumaquamarine;
+}
+
+@keyframes animate {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+
+    20% {
+        top: 20%;
+        opacity: 0.8;
+    }
+
+    40% {
+        top: 40%;
+        opacity: 0.6;
+    }
+
+    60% {
+        top: 60%;
+        opacity: 0.4;
+    }
+
+    80% {
+        top: 80%;
+        opacity: 0.2;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
